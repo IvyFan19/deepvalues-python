@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepvalues"
+version = "0.1.0"
+description = "Zero-dependency Python client for the DeepValues API: 13F guru holdings, intrinsic value, filings, sentiment and AI grounding context for US stocks."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "DeepValues", email = "team@deepvalues.ai" }]
+keywords = ["investing", "13F", "intrinsic value", "SEC", "Buffett", "agents", "MCP"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[project.urls]
+Homepage = "https://app.deepvalues.ai/developers"
+Documentation = "https://app.deepvalues.ai/llms.txt"
+Source = "https://github.com/IvyFan19/deepvalues-python"
+
+[tool.setuptools.packages.find]
+where = ["src"]
